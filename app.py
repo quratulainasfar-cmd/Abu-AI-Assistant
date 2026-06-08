@@ -39,8 +39,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Configure AI Key
-API_KEY = "YOUR_FREE_GEMINI_API_KEY"
-genai.configure(api_key=API_KEY)
+import streamlit as st
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # Permanent Urdu Disclaimer Visible on Top
 st.markdown("""
