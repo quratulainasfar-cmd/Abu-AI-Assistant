@@ -40,7 +40,7 @@ st.markdown("""
 
 # Configure AI Key
 import streamlit as st
-GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"].replace("\n", "").strip()
 
 # Permanent Urdu Disclaimer Visible on Top
 st.markdown("""
